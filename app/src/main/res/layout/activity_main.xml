@@ -3,71 +3,89 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/about"
-        android:textSize="30sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <Button
-        android:id="@+id/streamer"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/streamer"
-        android:background="@color/colorAccent"
-        android:onClick="onClick"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding">
 
-    <Button
-        android:id="@+id/scores"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/scores"
-        android:background="@color/colorAccent"
-        android:onClick="onClick"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/about"
+                android:textSize="30sp"/>
 
-    <Button
-        android:id="@+id/library"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/library"
-        android:background="@color/colorAccent"
-        android:onClick="onClick"/>
+            <Button
+                android:id="@+id/streamer"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/streamer"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"/>
 
-    <Button
-        android:id="@+id/bigger"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/build"
-        android:background="@color/colorAccent"
-        android:onClick="onClick"/>
+            <Button
+                android:id="@+id/scores"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/scores"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"/>
 
-    <Button
-        android:id="@+id/reader"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/reader"
-        android:background="@color/colorAccent"
-        android:onClick="onClick"/>
+            <Button
+                android:id="@+id/library"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/library"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"/>
 
-    <Button
-        android:id="@+id/capstone"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/spacing"
-        android:text="@string/capstone"
-        android:background="@color/colorAccent"
-        android:onClick="onClick"/>
+            <Button
+                android:id="@+id/bigger"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/build"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/reader"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/reader"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/capstone"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/capstone"
+                android:background="@color/colorAccent"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
+
+
+
